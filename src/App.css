@@ -1,27 +1,25 @@
-.App {
-  text-align: center;
+.backLayer {
+  background-image: url("https://www.uktech.news/wp-content/uploads/2022/07/shutterstock_1031976955.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  position: fixed;
+  opacity: 0.5;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.frontLayer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  z-index: 1;
 }
 
 .App-link {

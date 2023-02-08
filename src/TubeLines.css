@@ -1,0 +1,156 @@
+.container{
+  background-color:rgba(0,0,0,0.6);
+  color: white;
+  padding: 5vh;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsContainer{
+  display: inline-flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.selectsContainer{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkBlueBtn {
+  background-color: #102F9A;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-inline: 2vh;
+}
+.darkBlueBtn:hover{
+  cursor: pointer;
+}
+
+.redBtn {
+  background-color: #F02F06;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-inline: 2vh;
+}
+.redBtn:hover{
+  cursor: pointer;
+}
+
+.greyBtn {
+  background-color: #999999;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-inline: 2vh;
+}
+.greyBtn:hover{
+  cursor: pointer;
+}
+
+.blueBtn {
+  background-color: #00A0E0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-inline: 2vh;
+}
+.blueBtn:hover{
+  cursor: pointer;
+}
+
+.blackBtn {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-inline: 2vh;
+}
+.blackBtn:hover{
+  cursor: pointer;
+}
+
+.yellowBtn {
+  background-color: #f1c232;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-inline: 2vh;
+}
+.yellowBtn:hover{
+  cursor: pointer;
+}
+
+.greenBtn {
+  background-color: #3eb40b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-inline: 2vh;
+}
+.greenBtn:hover{
+  cursor: pointer;
+}
+
+.showTimetableBtn{
+  background-color: rgb(26, 99, 202);
+  color: white;
+  padding: 1vh 4vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vh;
+  border-radius: 4px;
+  margin-top: 4vh;
+}
+.showTimetableBtn:hover{
+  cursor: pointer;
+}
+
+select {
+  background-color: white;
+  height: 4vh;
+}
