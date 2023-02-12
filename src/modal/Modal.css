@@ -1,10 +1,15 @@
+@font-face {
+  font-family: mainFont;
+  src: url(../fonts/Johnston100\ W03\ Regular.woff2);
+}
+
 .modal {
-    font-family: arial;
+    font-family: mainFont;
   }
   
   .modal {
     position: fixed;
-    width: 400px;
+    width: 80vh;
     z-index: 1040;
     top: 30%;
     left: 30%;
@@ -27,7 +32,7 @@
   
   .modal-title {
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 3vh;
   }
   
   .modal-header {
@@ -41,15 +46,17 @@
   .modal-footer {
     padding: 12px;
   }
+
+  ol{
+    font-size: 2.5vh;
+  }
   
   .close-button {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 5vh;
     line-height: 1;
     color: #000;
     border: none;
     background-color: white;
-    opacity: 0.7;
     cursor: pointer;
   }
   button {
@@ -70,6 +77,8 @@
   .secondary-button {
     color: #fff;
     background-color: #6c757d;
+    font-family: mainFont;
+    font-size: 2vh;
   }
   .primary-button {
     color: #fff;

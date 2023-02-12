@@ -12,21 +12,29 @@ export default function TimetableModal({ showModal, handleClose, handleSuccess, 
             } else { return "" }
         } else { return "" }
     }
-
+    function addLeftZeroIfNeeded(str) {
+        if (str.length === 1) {
+            return "0" + str
+        } else return str
+    }
+    function timeToString(date) {
+        let hours = date.getHours().toString()
+        let minutes = date.getMinutes().toString()
+        let seconds = date.getSeconds().toString()
+        return addLeftZeroIfNeeded(hours) + ":" + addLeftZeroIfNeeded(minutes) + ":" + addLeftZeroIfNeeded(seconds)
+    }
     function getArrivalsSorted() {
-        if(platformArrivals !== null && platformArrivals !== undefined && platformArrivals[0] !== (null || undefined)){
+        if (platformArrivals !== null && platformArrivals !== undefined && platformArrivals[0] !== (null || undefined)) {
             platformArrivals.sort(function (a, b) {
                 return new Date(a.timeToLive) - new Date(b.timeToLive);
             });
             let arrivals = []
-            let i = 0
-            platformArrivals.forEach(a =>{
-                i++
+            platformArrivals.forEach(a => {
                 let d = new Date(a.timeToLive)
-                arrivals.push(i.toString() + ". Leaving at... " + d.getHours().toString()+":"+ d.getMinutes().toString()+":" + d.getSeconds().toString() )
+                arrivals.push(" Leaving at... " + timeToString(d))
             })
             return arrivals;
-        }else{return []}
+        } else { return [] }
     }
     return (
         <Modal
@@ -47,16 +55,15 @@ export default function TimetableModal({ showModal, handleClose, handleSuccess, 
                     </div>
                 </div>
                 <div className="modal-desc">
-                    {getArrivalsSorted().map(function(arrival, index){
-                        return <p key={index}>{arrival}</p>
-                    })}
+                    <ol>
+                        {getArrivalsSorted().map(function (arrival, index) {
+                            return <li key={index}>{arrival}</li>
+                        })}
+                    </ol>
                 </div>
                 <div className="modal-footer">
                     <button className="secondary-button" onClick={handleClose}>
                         Close
-                    </button>
-                    <button className="primary-button" onClick={handleSuccess}>
-                        Save Changes
                     </button>
                 </div>
             </div>

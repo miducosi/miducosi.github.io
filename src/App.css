@@ -1,36 +1,19 @@
-.backLayer {
-  background-image: url("https://www.uktech.news/wp-content/uploads/2022/07/shutterstock_1031976955.jpg");
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  position: fixed;
-  opacity: 0.5;
-  z-index: -1;
+@font-face {
+  font-family: mainFont;
+  src: url(fonts/Johnston100\ W03\ Regular.woff2);
 }
 
-.frontLayer {
-  min-height: 100vh;
+html {
+  background: url("images/london.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.App{
+  font-family: mainFont;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-  z-index: 1;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 100vh;
 }

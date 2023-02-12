@@ -1,14 +1,10 @@
 import './App.css';
-import TubeLines from './TubeLines';
+import MainComponent from './MainComponent';
 
 function App() {
   return (
     <div className="App">
-      <div className = "backLayer" />
-      <div className="frontLayer">
-        <TubeLines/>
-      </div>
-
+        <MainComponent/>
     </div>
   );
 }
